@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع اللياقة البدنية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-black text-white p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">موقع اللياقة</div>
+            <ul class="flex space-x-4 space-x-reverse">
+                <li><a href="#" class="hover:text-red-500">الرئيسية</a></li>
+                <li><a href="#" class="hover:text-red-500">البرامج</a></li>
+                <li><a href="#" class="hover:text-red-500">المدربون</a></li>
+                <li><a href="#" class="hover:text-red-500">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero bg-red-600 text-white py-20">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl font-bold mb-4">احصل على لياقتك البدنية الآن!</h1>
+                <p class="text-xl mb-8">نقدم أفضل برامج التدريب الشخصي واللياقة البدنية لتناسب احتياجاتك.</p>
+                <div class="space-x-4 space-x-reverse">
+                    <a href="#" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800">ابدأ الآن</a>
+                    <a href="#" class="bg-white text-red-600 px-6 py-3 rounded-full hover:bg-gray-200">اكتشف برامجنا</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trainers py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">المدربون المميزون</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-32 h-32 rounded-full bg-gray-300 mx-auto mb-4"></div>
+                        <h3 class="text-xl font-bold">أحمد محمد</h3>
+                        <p class="text-gray-600">مدرب لياقة بدنية معتمد</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-32 h-32 rounded-full bg-gray-300 mx-auto mb-4"></div>
+                        <h3 class="text-xl font-bold">سارة خالد</h3>
+                        <p class="text-gray-600">مدربة يوجا محترفة</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-32 h-32 rounded-full bg-gray-300 mx-auto mb-4"></div>
+                        <h3 class="text-xl font-bold">محمود علي</h3>
+                        <p class="text-gray-600">مدرب قوة وكمال أجسام</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-programs bg-gray-200 py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">البرامج المميزة</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-4">برنامج فقدان الوزن</h3>
+                        <p class="mb-4">برنامج مخصص لفقدان الوزن بطريقة صحية وفعالة.</p>
+                        <a href="#" class="text-red-600 hover:underline">اعرف المزيد <i class="fas fa-arrow-left mr-1"></i></a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-4">برنامج بناء العضلات</h3>
+                        <p class="mb-4">برنامج متكامل لبناء الكتلة العضلية وزيادة القوة.</p>
+                        <a href="#" class="text-red-600 hover:underline">اعرف المزيد <i class="fas fa-arrow-left mr-1"></i></a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-4">برنامج اللياقة الشاملة</h3>
+                        <p class="mb-4">برنامج متنوع لتحسين اللياقة البدنية العامة والصحة.</p>
+                        <a href="#" class="text-red-600 hover:underline">اعرف المزيد <i class="fas fa-arrow-left mr-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">آراء العملاء</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <p class="mb-4">"لقد حققت نتائج مذهلة مع برنامج فقدان الوزن. أنصح به بشدة!"</p>
+                        <p class="font-bold">- فاطمة أحمد</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <p class="mb-4">"المدربون هنا محترفون للغاية ويهتمون حقًا بتقدمك."</p>
+                        <p class="font-bold">- خالد محمود</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 موقع اللياقة. جميع الحقوق محفوظة.</p>
+            <div class="mt-4">
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // يمكنك إضافة أي كود JavaScript إضافي هنا
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم الموقع</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-black text-white p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">لوحة تحكم موقع اللياقة</div>
+            <ul class="flex space-x-4 space-x-reverse">
+                <li><a href="index.html" class="hover:text-red-500">الرئيسية</a></li>
+                <li><a href="blog-list.html" class="hover:text-red-500">المدونات</a></li>
+                <li><a href="faq.html" class="hover:text-red-500">الأسئلة الشائعة</a></li>
+                <li><a href="contact.html" class="hover:text-red-500">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">لوحة التحكم</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold mb-2">البرامج</h2>
+                <p class="mb-4">إدارة البرامج التدريبية المتاحة.</p>
+                <a href="program-list.html" class="text-red-600 hover:underline">إدارة البرامج</a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold mb-2">المدربون</h2>
+                <p class="mb-4">إدارة بيانات المدربين المحترفين.</p>
+                <a href="trainer-list.html" class="text-red-600 hover:underline">إدارة المدربين</a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold mb-2">العملاء</h2>
+                <p class="mb-4">عرض وإدارة معلومات العملاء وتقييماتهم.</p>
+                <a href="testimonials.html" class="text-red-600 hover:underline">إدارة العملاء</a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-xl font-bold mb-2">الإحصائيات</h2>
+            <p class="mb-4">عرض إحصائيات الأداء والنجاح للموقع.</p>
+            <canvas id="performanceChart" class="w-full h-64"></canvas>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-bold mb-2">التواصل</h2>
+            <p class="mb-4">عرض رسائل العملاء واستفساراتهم.</p>
+            <a href="contact-requests.html" class="text-red-600 hover:underline">عرض الرسائل</a>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 موقع اللياقة. جميع الحقوق محفوظة.</p>
+            <div class="mt-4">
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        const performanceChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو'],
+                datasets: [{
+                    label: 'عدد العملاء الجدد',
+                    data: [30, 50, 70, 40, 60, 80],
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

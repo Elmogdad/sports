@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع اللياقة البدنية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-black text-white p-4 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold"><i class="fas fa-dumbbell mr-2"></i>موقع اللياقة</div>
+            <ul class="flex space-x-4 space-x-reverse">
+                <li><a href="#" class="hover:text-red-500"><i class="fas fa-home ml-1"></i>الرئيسية</a></li>
+                <li><a href="#about" class="hover:text-red-500"><i class="fas fa-info-circle ml-1"></i>من نحن</a></li>
+                <li><a href="#programs" class="hover:text-red-500"><i class="fas fa-clipboard-list ml-1"></i>البرامج</a></li>
+                <li><a href="#trainers" class="hover:text-red-500"><i class="fas fa-user-friends ml-1"></i>المدربون</a></li>
+                <li><a href="#contact" class="hover:text-red-500"><i class="fas fa-envelope ml-1"></i>تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero bg-red-600 text-white py-20">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl font-bold mb-4">احصل على لياقتك البدنية الآن!</h1>
+                <p class="text-xl mb-8">نقدم أفضل برامج التدريب الشخصي واللياقة البدنية لتناسب احتياجاتك.</p>
+                <div class="space-x-4 space-x-reverse">
+                    <a href="#" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800"><i class="fas fa-play ml-2"></i>ابدأ الآن</a>
+                    <a href="#" class="bg-white text-red-600 px-6 py-3 rounded-full hover:bg-gray-200"><i class="fas fa-search ml-2"></i>اكتشف برامجنا</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about py-16 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8"><i class="fas fa-users mr-2"></i>من نحن</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="mb-4">موقعنا متخصص في تقديم برامج لياقة بدنية مخصصة لعملائنا. يضم فريقنا مجموعة من المدربين المحترفين الذين يسعون لمساعدتك في تحقيق أهدافك الصحية.</p>
+                        <h3 class="text-xl font-bold mb-2"><i class="fas fa-flag mr-2"></i>رسالتنا</h3>
+                        <p class="mb-4">رسالتنا هي تعزيز الصحة واللياقة البدنية لجميع أفراد المجتمع.</p>
+                        <h3 class="text-xl font-bold mb-2"><i class="fas fa-eye mr-2"></i>رؤيتنا</h3>
+                        <p class="mb-4">رؤيتنا هي بناء مجتمع صحي يتمتع بأعلى مستويات اللياقة البدنية.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2"><i class="fas fa-trophy mr-2"></i>قصة نجاحنا</h3>
+                        <p class="mb-4">بدأنا رحلتنا منذ عام 2010، وخلال هذه الفترة، تمكنا من مساعدة مئات الأفراد في تحسين لياقتهم البدنية وتحقيق أهدافهم الصحية. نفخر بأننا أصبحنا جزءًا من قصص النجاح لعملائنا، ونسعى دائمًا لتقديم أفضل الخدمات والبرامج المتخصصة.</p>
+                        <p>نحن نؤمن بأن كل شخص لديه القدرة على تحسين صحته ولياقته، ونحن هنا لدعمك في كل خطوة من رحلتك نحو حياة أكثر صحة ونشاطًا.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trainers" class="trainers py-16 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8"><i class="fas fa-user-friends mr-2"></i>المدربون المميزون</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-32 h-32 rounded-full bg-gray-300 mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-6xl text-gray-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">أحمد محمد</h3>
+                        <p class="text-gray-600">مدرب لياقة بدنية معتمد</p>
+                        <p class="mt-4">خبرة 10 سنوات في مجال اللياقة البدنية وبناء العضلات.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-32 h-32 rounded-full bg-gray-300 mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-6xl text-gray-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">سارة خالد</h3>
+                        <p class="text-gray-600">مدربة يوجا محترفة</p>
+                        <p class="mt-4">متخصصة في اليوجا والتأمل مع خبرة 8 سنوات في التدريب.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-32 h-32 rounded-full bg-gray-300 mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-6xl text-gray-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">محمود علي</h3>
+                        <p class="text-gray-600">مدرب قوة وكمال أجسام</p>
+                        <p class="mt-4">بطل سابق في كمال الأجسام مع خبرة 12 عامًا في التدريب.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="featured-programs bg-white py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8"><i class="fas fa-clipboard-list mr-2"></i>البرامج المميزة</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-4"><i class="fas fa-weight mr-2"></i>برنامج فقدان الوزن</h3>
+                        <p class="mb-4">برنامج مخصص لفقدان الوزن بطريقة صحية وفعالة.</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>تمارين هوائية مكثفة</li>
+                            <li>نظام غذائي متوازن</li>
+                            <li>متابعة أسبوعية مع المدرب</li>
+                        </ul>
+                        <a href="#" class="text-red-600 hover:underline">اعرف المزيد <i class="fas fa-arrow-left mr-1"></i></a>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-4"><i class="fas fa-dumbbell mr-2"></i>برنامج بناء العضلات</h3>
+                        <p class="mb-4">برنامج متكامل لبناء الكتلة العضلية وزيادة القوة.</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>تمارين قوة مركزة</li>
+                            <li>نظام غذائي عالي البروتين</li>
+                            <li>جلسات تدريب مكثفة</li>
+                        </ul>
+                        <a href="#" class="text-red-600 hover:underline">اعرف المزيد <i class="fas fa-arrow-left mr-1"></i></a>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-4"><i class="fas fa-heartbeat mr-2"></i>برنامج اللياقة الشاملة</h3>
+                        <p class="mb-4">برنامج متنوع لتحسين اللياقة البدنية العامة والصحة.</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>مزيج من التمارين الهوائية والقوة</li>
+                            <li>تمارين المرونة واليوجا</li>
+                            <li>نصائح للحياة الصحية</li>
+                        </ul>
+                        <a href="#" class="text-red-600 hover:underline">اعرف المزيد <i class="fas fa-arrow-left mr-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials py-16 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8"><i class="fas fa-comments mr-2"></i>آراء العملاء</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <p class="mb-4"><i class="fas fa-quote-right ml-2"></i>لقد حققت نتائج مذهلة مع برنامج فقدان الوزن. أنصح به بشدة!</p>
+                        <p class="font-bold">- فاطمة أحمد</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <p class="mb-4"><i class="fas fa-quote-right ml-2"></i>المدربون هنا محترفون للغاية ويهتمون حقًا بتقدمك.</p>
+                        <p class="font-bold">- خالد محمود</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact py-16 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8"><i class="fas fa-envelope mr-2"></i>تواصل معنا</h2>
+                <form class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block mb-2">الاسم</label>
+                        <input type="text" id="name" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block mb-2">البريد الإلكتروني</label>
+                        <input type="email" id="email" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block mb-2">الرسالة</label>
+                        <textarea id="message" class="w-full p-2 border rounded" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700">إرسال</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 موقع اللياقة. جميع الحقوق محفوظة.</p>
+            <div class="mt-4">
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white hover:text-red-500 mx-2"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // يمكنك إضافة أي كود JavaScript إضافي هنا
+    </script>
+</body>
+</html>
